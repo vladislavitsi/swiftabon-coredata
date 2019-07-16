@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDRecord" representedClassName="CDRecord" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Transformable" customClassName="Date" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDUser" inverseName="record" inverseEntity="CDUser" syncable="YES"/>
+    </entity>
+    <entity name="CDUser" representedClassName="CDUser" syncable="YES" codeGenerationType="category">
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="record" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDRecord" inverseName="user" inverseEntity="CDRecord" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDRecord" positionX="252.5078125" positionY="54.2421875" width="128" height="90"/>
+        <element name="CDUser" positionX="-63" positionY="-18" width="128" height="75"/>
+    </elements>
+</model>

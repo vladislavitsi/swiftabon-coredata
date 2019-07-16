@@ -7,23 +7,91 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3221093A22A80B7300B0F4DD /* AddRecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221093922A80B7300B0F4DD /* AddRecordViewModel.swift */; };
+		3238037422D8B06400DE36F8 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3238037322D8B06300DE36F8 /* CoreDataService.swift */; };
+		3238037722D8B0CE00DE36F8 /* CoreDataTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3238037622D8B0CE00DE36F8 /* CoreDataTransaction.swift */; };
+		3238037922D8B11B00DE36F8 /* TransactionHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3238037822D8B11B00DE36F8 /* TransactionHistoryService.swift */; };
+		3238037E22D9F80200DE36F8 /* RetainBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3238037D22D9F80200DE36F8 /* RetainBag.swift */; };
+		3238038022D9FB6C00DE36F8 /* TransactionListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3238037F22D9FB6C00DE36F8 /* TransactionListener.swift */; };
+		3238038222D9FC6400DE36F8 /* IncomingTransactionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3238038122D9FC6400DE36F8 /* IncomingTransactionProcessor.swift */; };
+		3238038422D9FF5800DE36F8 /* AddRecordPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3238038322D9FF5800DE36F8 /* AddRecordPersistance.swift */; };
+		3238038622D9FFBF00DE36F8 /* AddRecordCoreDataPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3238038522D9FFBF00DE36F8 /* AddRecordCoreDataPersistance.swift */; };
+		324F959622A517A800AE902B /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F959522A517A800AE902B /* Assembler.swift */; };
+		324F95C722A540B100AE902B /* FeedCoreDataPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F95C622A540B100AE902B /* FeedCoreDataPersistance.swift */; };
+		324F95D122A5724A00AE902B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F95D022A5724A00AE902B /* Router.swift */; };
+		324F95D322A577A000AE902B /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F95D222A577A000AE902B /* AddRecordViewController.swift */; };
+		32529D6122B797C400F5E767 /* Swiftabon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32529D5F22B797C400F5E767 /* Swiftabon.xcdatamodeld */; };
+		32529D6622B7985900F5E767 /* SWUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32529D6222B7985900F5E767 /* SWUser+CoreDataClass.swift */; };
+		32529D6722B7985900F5E767 /* SWUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32529D6322B7985900F5E767 /* SWUser+CoreDataProperties.swift */; };
+		32529D6822B7985900F5E767 /* SWRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32529D6422B7985900F5E767 /* SWRecord+CoreDataClass.swift */; };
+		32529D6922B7985900F5E767 /* SWRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32529D6522B7985900F5E767 /* SWRecord+CoreDataProperties.swift */; };
+		3268BB1222B39C6100DF2E0E /* CoreDataParsable+Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268BB1122B39C6100DF2E0E /* CoreDataParsable+Entity.swift */; };
+		3268BB1422B3BDD500DF2E0E /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268BB1322B3BDD500DF2E0E /* CoreDataHelper.swift */; };
+		3268BB1722B3C17700DF2E0E /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268BB1622B3C17700DF2E0E /* Record.swift */; };
+		3268BB1B22B3C1A300DF2E0E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268BB1A22B3C1A300DF2E0E /* User.swift */; };
+		32BB8FD622DA073D00D186C4 /* CoreDataPersistanceAbstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB8FD522DA073D00D186C4 /* CoreDataPersistanceAbstract.swift */; };
+		32C4984222D6181300BEE871 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C4984122D6181300BEE871 /* Transaction.swift */; };
 		32D2FC1B22A4F93F00CB00CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2FC1A22A4F93F00CB00CB /* AppDelegate.swift */; };
-		32D2FC1D22A4F93F00CB00CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2FC1C22A4F93F00CB00CB /* ViewController.swift */; };
+		32D2FC1D22A4F93F00CB00CB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2FC1C22A4F93F00CB00CB /* FeedViewController.swift */; };
 		32D2FC2022A4F93F00CB00CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D2FC1E22A4F93F00CB00CB /* Main.storyboard */; };
-		32D2FC2322A4F93F00CB00CB /* SwiftabonCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32D2FC2122A4F93F00CB00CB /* SwiftabonCoreData.xcdatamodeld */; };
 		32D2FC2522A4F94000CB00CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D2FC2422A4F94000CB00CB /* Assets.xcassets */; };
 		32D2FC2822A4F94000CB00CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D2FC2622A4F94000CB00CB /* LaunchScreen.storyboard */; };
+		32D2FC3022A5021900CB00CB /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2FC2F22A5021900CB00CB /* FeedTableViewCell.swift */; };
+		32D2FC3222A5077A00CB00CB /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2FC3122A5077A00CB00CB /* FeedViewModel.swift */; };
+		32D2FC3422A5078200CB00CB /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2FC3322A5078200CB00CB /* FeedModel.swift */; };
+		32E2594B22B3C722007441F5 /* FeedPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E2594A22B3C722007441F5 /* FeedPersistance.swift */; };
+		32E5E59B22DA0DF20053289B /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E5E59A22DA0DF20053289B /* ServiceProvider.swift */; };
+		32E5E59D22DC78230053289B /* RegularParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E5E59C22DC78230053289B /* RegularParsable.swift */; };
+		32E5E59F22DC956E0053289B /* TransactionHistoryTrackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E5E59E22DC956E0053289B /* TransactionHistoryTrackable.swift */; };
+		32E5E5A922DCB7EA0053289B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E5E5A822DCB7EA0053289B /* NetworkService.swift */; };
+		32E5E5AD22DCBA340053289B /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E5E5AC22DCBA340053289B /* SyncService.swift */; };
+		32E5E5B022DDBAC10053289B /* ConfiguratesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E5E5AF22DDBAC10053289B /* ConfiguratesService.swift */; };
+		32E5E5B322DE06EF0053289B /* TransactionHistoryTrackable+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E5E5B222DE06EF0053289B /* TransactionHistoryTrackable+CoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3221093922A80B7300B0F4DD /* AddRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordViewModel.swift; sourceTree = "<group>"; };
+		3238037322D8B06300DE36F8 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		3238037622D8B0CE00DE36F8 /* CoreDataTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTransaction.swift; sourceTree = "<group>"; };
+		3238037822D8B11B00DE36F8 /* TransactionHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryService.swift; sourceTree = "<group>"; };
+		3238037D22D9F80200DE36F8 /* RetainBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetainBag.swift; sourceTree = "<group>"; };
+		3238037F22D9FB6C00DE36F8 /* TransactionListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListener.swift; sourceTree = "<group>"; };
+		3238038122D9FC6400DE36F8 /* IncomingTransactionProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingTransactionProcessor.swift; sourceTree = "<group>"; };
+		3238038322D9FF5800DE36F8 /* AddRecordPersistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecordPersistance.swift; sourceTree = "<group>"; };
+		3238038522D9FFBF00DE36F8 /* AddRecordCoreDataPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordCoreDataPersistance.swift; sourceTree = "<group>"; };
+		324F959522A517A800AE902B /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		324F95C622A540B100AE902B /* FeedCoreDataPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoreDataPersistance.swift; sourceTree = "<group>"; };
+		324F95D022A5724A00AE902B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		324F95D222A577A000AE902B /* AddRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordViewController.swift; sourceTree = "<group>"; };
+		32529D6022B797C400F5E767 /* Swiftabon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swiftabon.xcdatamodel; sourceTree = "<group>"; };
+		32529D6222B7985900F5E767 /* SWUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SWUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		32529D6322B7985900F5E767 /* SWUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SWUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		32529D6422B7985900F5E767 /* SWRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SWRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
+		32529D6522B7985900F5E767 /* SWRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SWRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3268BB1122B39C6100DF2E0E /* CoreDataParsable+Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataParsable+Entity.swift"; sourceTree = "<group>"; };
+		3268BB1322B3BDD500DF2E0E /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		3268BB1622B3C17700DF2E0E /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		3268BB1A22B3C1A300DF2E0E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		32BB8FD522DA073D00D186C4 /* CoreDataPersistanceAbstract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPersistanceAbstract.swift; sourceTree = "<group>"; };
+		32C4984122D6181300BEE871 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		32D2FC1722A4F93F00CB00CB /* SwiftabonCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftabonCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D2FC1A22A4F93F00CB00CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		32D2FC1C22A4F93F00CB00CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32D2FC1C22A4F93F00CB00CB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		32D2FC1F22A4F93F00CB00CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		32D2FC2222A4F93F00CB00CB /* SwiftabonCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftabonCoreData.xcdatamodel; sourceTree = "<group>"; };
 		32D2FC2422A4F94000CB00CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32D2FC2722A4F94000CB00CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32D2FC2922A4F94000CB00CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D2FC2F22A5021900CB00CB /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		32D2FC3122A5077A00CB00CB /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		32D2FC3322A5078200CB00CB /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		32E2594A22B3C722007441F5 /* FeedPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPersistance.swift; sourceTree = "<group>"; };
+		32E5E59A22DA0DF20053289B /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		32E5E59C22DC78230053289B /* RegularParsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularParsable.swift; sourceTree = "<group>"; };
+		32E5E59E22DC956E0053289B /* TransactionHistoryTrackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryTrackable.swift; sourceTree = "<group>"; };
+		32E5E5A822DCB7EA0053289B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		32E5E5AC22DCBA340053289B /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
+		32E5E5AF22DDBAC10053289B /* ConfiguratesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratesService.swift; sourceTree = "<group>"; };
+		32E5E5B222DE06EF0053289B /* TransactionHistoryTrackable+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionHistoryTrackable+CoreData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +105,115 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3221093822A80B5C00B0F4DD /* AddRecord */ = {
+			isa = PBXGroup;
+			children = (
+				32E5E5BA22DE0AA10053289B /* Model */,
+				32E5E5B922DE0A9C0053289B /* ViewModel */,
+				32E5E5B822DE0A950053289B /* View */,
+			);
+			path = AddRecord;
+			sourceTree = "<group>";
+		};
+		3238037222D8B05500DE36F8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				32E5E59A22DA0DF20053289B /* ServiceProvider.swift */,
+				32E5E5AE22DDBAA10053289B /* Configurates */,
+				3238037A22D8B12900DE36F8 /* TransactionHistory */,
+				32E5E5B122DE05540053289B /* Sync */,
+				3238037522D8B0B200DE36F8 /* CoreData */,
+				32E5E5A722DCB7D50053289B /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3238037522D8B0B200DE36F8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3238037322D8B06300DE36F8 /* CoreDataService.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3238037A22D8B12900DE36F8 /* TransactionHistory */ = {
+			isa = PBXGroup;
+			children = (
+				3238037822D8B11B00DE36F8 /* TransactionHistoryService.swift */,
+				3238038122D9FC6400DE36F8 /* IncomingTransactionProcessor.swift */,
+				32E5E59E22DC956E0053289B /* TransactionHistoryTrackable.swift */,
+			);
+			path = TransactionHistory;
+			sourceTree = "<group>";
+		};
+		324F95C322A525ED00AE902B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				324F959522A517A800AE902B /* Assembler.swift */,
+				324F95D022A5724A00AE902B /* Router.swift */,
+				3238037D22D9F80200DE36F8 /* RetainBag.swift */,
+				32BB8FD522DA073D00D186C4 /* CoreDataPersistanceAbstract.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		324F95C422A525FE00AE902B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32D2FC2422A4F94000CB00CB /* Assets.xcassets */,
+				32D2FC2622A4F94000CB00CB /* LaunchScreen.storyboard */,
+				32D2FC2922A4F94000CB00CB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3268BB1522B3C16000DF2E0E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				32C4984122D6181300BEE871 /* Transaction.swift */,
+				3268BB1622B3C17700DF2E0E /* Record.swift */,
+				3268BB1A22B3C1A300DF2E0E /* User.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		32BB8FD722DA0A0600D186C4 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				32E2594A22B3C722007441F5 /* FeedPersistance.swift */,
+				324F95C622A540B100AE902B /* FeedCoreDataPersistance.swift */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
+		32BB8FD822DA0A1B00D186C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				32D2FC3122A5077A00CB00CB /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		32C8348D22A8E8800001D994 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				32E2594C22B3CFAD007441F5 /* View */,
+				32BB8FD822DA0A1B00D186C4 /* ViewModel */,
+				32E2594D22B3CFBB007441F5 /* Model */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		32C8348E22A8E8970001D994 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				32D2FC1E22A4F93F00CB00CB /* Main.storyboard */,
+				32C8348D22A8E8800001D994 /* Feed */,
+				3221093822A80B5C00B0F4DD /* AddRecord */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		32D2FC0E22A4F93F00CB00CB = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +233,132 @@
 		32D2FC1922A4F93F00CB00CB /* SwiftabonCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				32E5E5B422DE07180053289B /* CoreData */,
 				32D2FC1A22A4F93F00CB00CB /* AppDelegate.swift */,
-				32D2FC1C22A4F93F00CB00CB /* ViewController.swift */,
-				32D2FC1E22A4F93F00CB00CB /* Main.storyboard */,
-				32D2FC2422A4F94000CB00CB /* Assets.xcassets */,
-				32D2FC2622A4F94000CB00CB /* LaunchScreen.storyboard */,
-				32D2FC2922A4F94000CB00CB /* Info.plist */,
-				32D2FC2122A4F93F00CB00CB /* SwiftabonCoreData.xcdatamodeld */,
+				3238037222D8B05500DE36F8 /* Services */,
+				3268BB1522B3C16000DF2E0E /* Entity */,
+				324F95C322A525ED00AE902B /* Utility */,
+				32C8348E22A8E8970001D994 /* Modules */,
+				324F95C422A525FE00AE902B /* Resources */,
 			);
 			path = SwiftabonCoreData;
+			sourceTree = "<group>";
+		};
+		32E2594C22B3CFAD007441F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32D2FC1C22A4F93F00CB00CB /* FeedViewController.swift */,
+				32D2FC2F22A5021900CB00CB /* FeedTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32E2594D22B3CFBB007441F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32BB8FD722DA0A0600D186C4 /* Persistance */,
+				32D2FC3322A5078200CB00CB /* FeedModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32E5E5A722DCB7D50053289B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				32E5E5A822DCB7EA0053289B /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		32E5E5AE22DDBAA10053289B /* Configurates */ = {
+			isa = PBXGroup;
+			children = (
+				32E5E5AF22DDBAC10053289B /* ConfiguratesService.swift */,
+			);
+			path = Configurates;
+			sourceTree = "<group>";
+		};
+		32E5E5B122DE05540053289B /* Sync */ = {
+			isa = PBXGroup;
+			children = (
+				32E5E5AC22DCBA340053289B /* SyncService.swift */,
+			);
+			path = Sync;
+			sourceTree = "<group>";
+		};
+		32E5E5B422DE07180053289B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3268BB1322B3BDD500DF2E0E /* CoreDataHelper.swift */,
+				32E5E59C22DC78230053289B /* RegularParsable.swift */,
+				32E5E5B722DE079C0053289B /* Transaction */,
+				32E5E5B622DE07210053289B /* Extensions */,
+				32E5E5B522DE071D0053289B /* Model */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		32E5E5B522DE071D0053289B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32529D6322B7985900F5E767 /* SWUser+CoreDataProperties.swift */,
+				32529D6422B7985900F5E767 /* SWRecord+CoreDataClass.swift */,
+				32529D6222B7985900F5E767 /* SWUser+CoreDataClass.swift */,
+				32529D6522B7985900F5E767 /* SWRecord+CoreDataProperties.swift */,
+				32529D5F22B797C400F5E767 /* Swiftabon.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32E5E5B622DE07210053289B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3268BB1122B39C6100DF2E0E /* CoreDataParsable+Entity.swift */,
+				32E5E5B222DE06EF0053289B /* TransactionHistoryTrackable+CoreData.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		32E5E5B722DE079C0053289B /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				3238037F22D9FB6C00DE36F8 /* TransactionListener.swift */,
+				3238037622D8B0CE00DE36F8 /* CoreDataTransaction.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		32E5E5B822DE0A950053289B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				324F95D222A577A000AE902B /* AddRecordViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32E5E5B922DE0A9C0053289B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3221093922A80B7300B0F4DD /* AddRecordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		32E5E5BA22DE0AA10053289B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32E5E5BB22DE0AA40053289B /* Persistance */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32E5E5BB22DE0AA40053289B /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				3238038522D9FFBF00DE36F8 /* AddRecordCoreDataPersistance.swift */,
+				3238038322D9FF5800DE36F8 /* AddRecordPersistance.swift */,
+			);
+			path = Persistance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +432,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32D2FC2322A4F93F00CB00CB /* SwiftabonCoreData.xcdatamodeld in Sources */,
-				32D2FC1D22A4F93F00CB00CB /* ViewController.swift in Sources */,
+				324F95C722A540B100AE902B /* FeedCoreDataPersistance.swift in Sources */,
+				32D2FC3422A5078200CB00CB /* FeedModel.swift in Sources */,
+				3238037E22D9F80200DE36F8 /* RetainBag.swift in Sources */,
+				32E5E5AD22DCBA340053289B /* SyncService.swift in Sources */,
+				32E5E59F22DC956E0053289B /* TransactionHistoryTrackable.swift in Sources */,
+				3268BB1422B3BDD500DF2E0E /* CoreDataHelper.swift in Sources */,
+				3238038622D9FFBF00DE36F8 /* AddRecordCoreDataPersistance.swift in Sources */,
+				324F95D322A577A000AE902B /* AddRecordViewController.swift in Sources */,
+				32529D6622B7985900F5E767 /* SWUser+CoreDataClass.swift in Sources */,
+				32E5E5B022DDBAC10053289B /* ConfiguratesService.swift in Sources */,
+				3238038422D9FF5800DE36F8 /* AddRecordPersistance.swift in Sources */,
+				32E5E59B22DA0DF20053289B /* ServiceProvider.swift in Sources */,
+				324F959622A517A800AE902B /* Assembler.swift in Sources */,
+				324F95D122A5724A00AE902B /* Router.swift in Sources */,
+				32529D6722B7985900F5E767 /* SWUser+CoreDataProperties.swift in Sources */,
+				32E5E59D22DC78230053289B /* RegularParsable.swift in Sources */,
+				3268BB1222B39C6100DF2E0E /* CoreDataParsable+Entity.swift in Sources */,
+				32529D6122B797C400F5E767 /* Swiftabon.xcdatamodeld in Sources */,
+				3238037922D8B11B00DE36F8 /* TransactionHistoryService.swift in Sources */,
+				32D2FC3022A5021900CB00CB /* FeedTableViewCell.swift in Sources */,
+				32529D6822B7985900F5E767 /* SWRecord+CoreDataClass.swift in Sources */,
+				32E5E5B322DE06EF0053289B /* TransactionHistoryTrackable+CoreData.swift in Sources */,
+				32E5E5A922DCB7EA0053289B /* NetworkService.swift in Sources */,
+				3221093A22A80B7300B0F4DD /* AddRecordViewModel.swift in Sources */,
+				3238038022D9FB6C00DE36F8 /* TransactionListener.swift in Sources */,
+				32529D6922B7985900F5E767 /* SWRecord+CoreDataProperties.swift in Sources */,
+				32D2FC3222A5077A00CB00CB /* FeedViewModel.swift in Sources */,
+				3268BB1B22B3C1A300DF2E0E /* User.swift in Sources */,
+				3238037722D8B0CE00DE36F8 /* CoreDataTransaction.swift in Sources */,
+				32BB8FD622DA073D00D186C4 /* CoreDataPersistanceAbstract.swift in Sources */,
+				32D2FC1D22A4F93F00CB00CB /* FeedViewController.swift in Sources */,
+				3268BB1722B3C17700DF2E0E /* Record.swift in Sources */,
+				3238038222D9FC6400DE36F8 /* IncomingTransactionProcessor.swift in Sources */,
+				32E2594B22B3C722007441F5 /* FeedPersistance.swift in Sources */,
 				32D2FC1B22A4F93F00CB00CB /* AppDelegate.swift in Sources */,
+				3238037422D8B06400DE36F8 /* CoreDataService.swift in Sources */,
+				32C4984222D6181300BEE871 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +616,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T7VR5AMBYN;
-				INFOPLIST_FILE = SwiftabonCoreData/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftabonCoreData/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +635,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T7VR5AMBYN;
-				INFOPLIST_FILE = SwiftabonCoreData/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftabonCoreData/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,13 +672,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		32D2FC2122A4F93F00CB00CB /* SwiftabonCoreData.xcdatamodeld */ = {
+		32529D5F22B797C400F5E767 /* Swiftabon.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				32D2FC2222A4F93F00CB00CB /* SwiftabonCoreData.xcdatamodel */,
+				32529D6022B797C400F5E767 /* Swiftabon.xcdatamodel */,
 			);
-			currentVersion = 32D2FC2222A4F93F00CB00CB /* SwiftabonCoreData.xcdatamodel */;
-			path = SwiftabonCoreData.xcdatamodeld;
+			currentVersion = 32529D6022B797C400F5E767 /* Swiftabon.xcdatamodel */;
+			path = Swiftabon.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
