@@ -41,7 +41,7 @@ fileprivate extension Router {
     func toMain() {
         let window = UIWindow(frame: UIScreen.main.bounds)
         AppDelegate.shared.window = window
-        let vc = Assembler.FeedViewController!
+        let vc = Assembler.FeedViewController
         let navController = UINavigationController(rootViewController: vc)
         navController.navigationBar.prefersLargeTitles = true
         window.rootViewController = navController
@@ -49,7 +49,7 @@ fileprivate extension Router {
     }
 
     func toAddRecord() {
-        let vc = Assembler.addRecordViewController!
+        let vc = Assembler.addRecordViewController
         vc.modalPresentationStyle = .fullScreen
         let navController = UINavigationController(rootViewController: vc)
         AppDelegate.shared.window?.rootViewController?.present(navController, animated: true, completion: nil)

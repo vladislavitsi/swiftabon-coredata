@@ -11,8 +11,8 @@ import CoreData
 
 struct Assembler {
     
-    static var FeedViewController: FeedViewController? {
-        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FeedViewController") as? FeedViewController else { return nil }
+    static var FeedViewController: FeedViewController {
+        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FeedViewController") as? FeedViewController else { fatalError("Couldn't find FeedViewController!") }
         let persistence = FeedCoreDataPersistance(coreDataService: ServiceProvider.coreData)
         let model = FeedModel(withPersistance: persistence, syncService: ServiceProvider.sync)
         let viewModel = FeedViewModel(with: model)
@@ -20,8 +20,8 @@ struct Assembler {
         return vc
     }
 
-    static var addRecordViewController: AddRecordViewController? {
-        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddRecordViewController") as? AddRecordViewController else { return nil }
+    static var addRecordViewController: AddRecordViewController {
+        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddRecordViewController") as? AddRecordViewController else { fatalError("Couldn't find AddRecordViewController!") }
         vc.viewModel = AddRecordViewModel(persistence: AddRecordCoreDataPersistance(coreDataService: ServiceProvider.coreData))
         return vc
     }

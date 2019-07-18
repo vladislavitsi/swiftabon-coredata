@@ -10,7 +10,7 @@ import Foundation
 
 class TransactionHistoryService {
 
-    var isEnabled: Bool = true {
+    var isEnabled: Bool = false {
         didSet {
             if isEnabled {
                 bindTransactionListening()
@@ -36,11 +36,10 @@ class TransactionHistoryService {
 
     private let queue = DispatchQueue(label: "TransactionHistoryQueue")
 
-    private func add(transaction: Transaction<TransactionHistoryTrackable>) {
+    func add(transaction: Transaction<TransactionHistoryTrackable>) {
         queue.async { [weak self] in
             guard self?.isEnabled == true else { return }
             self?.transactionList.append(transaction)
-            print("§ added \(transaction.action)")
         }
     }
 

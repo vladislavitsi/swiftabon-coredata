@@ -26,9 +26,32 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "32D2FC1622A4F93F00CB00CB"
+            BuildableName = "SwiftabonCoreData.app"
+            BlueprintName = "SwiftabonCoreData"
+            ReferencedContainer = "container:SwiftabonCoreData.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "32E5E5BF22DF45430053289B"
+               BuildableName = "SwiftabonCoreDataTests.xctest"
+               BlueprintName = "SwiftabonCoreDataTests"
+               ReferencedContainer = "container:SwiftabonCoreData.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -50,6 +73,8 @@
             ReferencedContainer = "container:SwiftabonCoreData.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

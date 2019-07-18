@@ -29,6 +29,7 @@
 		3268BB1422B3BDD500DF2E0E /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268BB1322B3BDD500DF2E0E /* CoreDataHelper.swift */; };
 		3268BB1722B3C17700DF2E0E /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268BB1622B3C17700DF2E0E /* Record.swift */; };
 		3268BB1B22B3C1A300DF2E0E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268BB1A22B3C1A300DF2E0E /* User.swift */; };
+		32B0E1C022E075DC009B3A22 /* TransactionHistoryServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0E1BF22E075DC009B3A22 /* TransactionHistoryServiceTest.swift */; };
 		32BB8FD622DA073D00D186C4 /* CoreDataPersistanceAbstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB8FD522DA073D00D186C4 /* CoreDataPersistanceAbstract.swift */; };
 		32C4984222D6181300BEE871 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C4984122D6181300BEE871 /* Transaction.swift */; };
 		32D2FC1B22A4F93F00CB00CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2FC1A22A4F93F00CB00CB /* AppDelegate.swift */; };
@@ -47,7 +48,18 @@
 		32E5E5AD22DCBA340053289B /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E5E5AC22DCBA340053289B /* SyncService.swift */; };
 		32E5E5B022DDBAC10053289B /* ConfiguratesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E5E5AF22DDBAC10053289B /* ConfiguratesService.swift */; };
 		32E5E5B322DE06EF0053289B /* TransactionHistoryTrackable+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E5E5B222DE06EF0053289B /* TransactionHistoryTrackable+CoreData.swift */; };
+		32E5E5CE22DF58470053289B /* ConfiguratesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E5E5CD22DF58470053289B /* ConfiguratesServiceTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32E5E5C522DF45430053289B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32D2FC0F22A4F93F00CB00CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D2FC1622A4F93F00CB00CB;
+			remoteInfo = SwiftabonCoreData;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3221093922A80B7300B0F4DD /* AddRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordViewModel.swift; sourceTree = "<group>"; };
@@ -72,6 +84,7 @@
 		3268BB1322B3BDD500DF2E0E /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		3268BB1622B3C17700DF2E0E /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		3268BB1A22B3C1A300DF2E0E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		32B0E1BF22E075DC009B3A22 /* TransactionHistoryServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryServiceTest.swift; sourceTree = "<group>"; };
 		32BB8FD522DA073D00D186C4 /* CoreDataPersistanceAbstract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPersistanceAbstract.swift; sourceTree = "<group>"; };
 		32C4984122D6181300BEE871 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		32D2FC1722A4F93F00CB00CB /* SwiftabonCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftabonCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,10 +105,20 @@
 		32E5E5AC22DCBA340053289B /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
 		32E5E5AF22DDBAC10053289B /* ConfiguratesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratesService.swift; sourceTree = "<group>"; };
 		32E5E5B222DE06EF0053289B /* TransactionHistoryTrackable+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionHistoryTrackable+CoreData.swift"; sourceTree = "<group>"; };
+		32E5E5C022DF45430053289B /* SwiftabonCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftabonCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E5E5C422DF45430053289B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32E5E5CD22DF58470053289B /* ConfiguratesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratesServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		32D2FC1422A4F93F00CB00CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32E5E5BD22DF45430053289B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -218,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				32D2FC1922A4F93F00CB00CB /* SwiftabonCoreData */,
+				32E5E5C122DF45430053289B /* SwiftabonCoreDataTests */,
 				32D2FC1822A4F93F00CB00CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -226,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				32D2FC1722A4F93F00CB00CB /* SwiftabonCoreData.app */,
+				32E5E5C022DF45430053289B /* SwiftabonCoreDataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -361,6 +386,24 @@
 			path = Persistance;
 			sourceTree = "<group>";
 		};
+		32E5E5C122DF45430053289B /* SwiftabonCoreDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				32E5E5CA22DF58030053289B /* Services */,
+				32E5E5C422DF45430053289B /* Info.plist */,
+			);
+			path = SwiftabonCoreDataTests;
+			sourceTree = "<group>";
+		};
+		32E5E5CA22DF58030053289B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				32E5E5CD22DF58470053289B /* ConfiguratesServiceTests.swift */,
+				32B0E1BF22E075DC009B3A22 /* TransactionHistoryServiceTest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -381,18 +424,40 @@
 			productReference = 32D2FC1722A4F93F00CB00CB /* SwiftabonCoreData.app */;
 			productType = "com.apple.product-type.application";
 		};
+		32E5E5BF22DF45430053289B /* SwiftabonCoreDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32E5E5C722DF45430053289B /* Build configuration list for PBXNativeTarget "SwiftabonCoreDataTests" */;
+			buildPhases = (
+				32E5E5BC22DF45430053289B /* Sources */,
+				32E5E5BD22DF45430053289B /* Frameworks */,
+				32E5E5BE22DF45430053289B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32E5E5C622DF45430053289B /* PBXTargetDependency */,
+			);
+			name = SwiftabonCoreDataTests;
+			productName = SwiftabonCoreDataTests;
+			productReference = 32E5E5C022DF45430053289B /* SwiftabonCoreDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		32D2FC0F22A4F93F00CB00CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = vladislavitsi;
 				TargetAttributes = {
 					32D2FC1622A4F93F00CB00CB = {
 						CreatedOnToolsVersion = 10.2.1;
+					};
+					32E5E5BF22DF45430053289B = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 32D2FC1622A4F93F00CB00CB;
 					};
 				};
 			};
@@ -410,6 +475,7 @@
 			projectRoot = "";
 			targets = (
 				32D2FC1622A4F93F00CB00CB /* SwiftabonCoreData */,
+				32E5E5BF22DF45430053289B /* SwiftabonCoreDataTests */,
 			);
 		};
 /* End PBXProject section */
@@ -422,6 +488,13 @@
 				32D2FC2822A4F94000CB00CB /* LaunchScreen.storyboard in Resources */,
 				32D2FC2522A4F94000CB00CB /* Assets.xcassets in Resources */,
 				32D2FC2022A4F93F00CB00CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32E5E5BE22DF45430053289B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +545,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		32E5E5BC22DF45430053289B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E5E5CE22DF58470053289B /* ConfiguratesServiceTests.swift in Sources */,
+				32B0E1C022E075DC009B3A22 /* TransactionHistoryServiceTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32E5E5C622DF45430053289B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32D2FC1622A4F93F00CB00CB /* SwiftabonCoreData */;
+			targetProxy = 32E5E5C522DF45430053289B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		32D2FC1E22A4F93F00CB00CB /* Main.storyboard */ = {
@@ -617,7 +707,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T7VR5AMBYN;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftabonCoreData/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -636,7 +726,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T7VR5AMBYN;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftabonCoreData/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -645,6 +735,48 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32E5E5C822DF45430053289B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7VR5AMBYN;
+				INFOPLIST_FILE = SwiftabonCoreDataTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladislavitsi.SwiftabonCoreDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftabonCoreData.app/SwiftabonCoreData";
+			};
+			name = Debug;
+		};
+		32E5E5C922DF45430053289B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7VR5AMBYN;
+				INFOPLIST_FILE = SwiftabonCoreDataTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladislavitsi.SwiftabonCoreDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftabonCoreData.app/SwiftabonCoreData";
 			};
 			name = Release;
 		};
@@ -665,6 +797,15 @@
 			buildConfigurations = (
 				32D2FC2D22A4F94000CB00CB /* Debug */,
 				32D2FC2E22A4F94000CB00CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32E5E5C722DF45430053289B /* Build configuration list for PBXNativeTarget "SwiftabonCoreDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32E5E5C822DF45430053289B /* Debug */,
+				32E5E5C922DF45430053289B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

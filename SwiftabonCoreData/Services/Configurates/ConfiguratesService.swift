@@ -23,7 +23,5 @@ final class ConfiguratesService {
 
     private struct Constants {
         static let lastSyncDateKey = "lastSyncDate"
-
-        private init() {}
     }
 }

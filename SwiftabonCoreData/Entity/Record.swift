@@ -17,3 +17,9 @@ struct Record: Codable {
 
 extension Record: TransactionHistoryTrackable { }
 
+extension Record: Equatable {
+    static func == (lhs: Record, rhs: Record) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
+

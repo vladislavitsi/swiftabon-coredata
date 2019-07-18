@@ -12,4 +12,6 @@ struct User: Codable {
     let username: String?
 }
 
+extension User: Equatable { }
+
 extension User: TransactionHistoryTrackable { }
