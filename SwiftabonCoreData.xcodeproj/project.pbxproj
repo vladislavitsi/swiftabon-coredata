@@ -30,6 +30,7 @@
 		3268BB1722B3C17700DF2E0E /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268BB1622B3C17700DF2E0E /* Record.swift */; };
 		3268BB1B22B3C1A300DF2E0E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268BB1A22B3C1A300DF2E0E /* User.swift */; };
 		32B0E1C022E075DC009B3A22 /* TransactionHistoryServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0E1BF22E075DC009B3A22 /* TransactionHistoryServiceTest.swift */; };
+		32B0E1C222E19C26009B3A22 /* SyncServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0E1C122E19C26009B3A22 /* SyncServiceTests.swift */; };
 		32BB8FD622DA073D00D186C4 /* CoreDataPersistanceAbstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB8FD522DA073D00D186C4 /* CoreDataPersistanceAbstract.swift */; };
 		32C4984222D6181300BEE871 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C4984122D6181300BEE871 /* Transaction.swift */; };
 		32D2FC1B22A4F93F00CB00CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2FC1A22A4F93F00CB00CB /* AppDelegate.swift */; };
@@ -85,6 +86,7 @@
 		3268BB1622B3C17700DF2E0E /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		3268BB1A22B3C1A300DF2E0E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		32B0E1BF22E075DC009B3A22 /* TransactionHistoryServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryServiceTest.swift; sourceTree = "<group>"; };
+		32B0E1C122E19C26009B3A22 /* SyncServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncServiceTests.swift; sourceTree = "<group>"; };
 		32BB8FD522DA073D00D186C4 /* CoreDataPersistanceAbstract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPersistanceAbstract.swift; sourceTree = "<group>"; };
 		32C4984122D6181300BEE871 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		32D2FC1722A4F93F00CB00CB /* SwiftabonCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftabonCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -400,6 +402,7 @@
 			children = (
 				32E5E5CD22DF58470053289B /* ConfiguratesServiceTests.swift */,
 				32B0E1BF22E075DC009B3A22 /* TransactionHistoryServiceTest.swift */,
+				32B0E1C122E19C26009B3A22 /* SyncServiceTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32B0E1C222E19C26009B3A22 /* SyncServiceTests.swift in Sources */,
 				32E5E5CE22DF58470053289B /* ConfiguratesServiceTests.swift in Sources */,
 				32B0E1C022E075DC009B3A22 /* TransactionHistoryServiceTest.swift in Sources */,
 			);
