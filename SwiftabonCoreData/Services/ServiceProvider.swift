@@ -28,7 +28,7 @@ enum ServiceProvider {
     }()
 
     static var sync: SyncService = {
-        return SyncService(ServiceProvider.transactionHistory, ServiceProvider.networker, ServiceProvider.transactionProcessor)
+        return SyncService(ServiceProvider.transactionHistory, ServiceProvider.networker, ServiceProvider.transactionProcessor, ServiceProvider.config, ServiceProvider.coreData)
     }()
 
     static var config: ConfiguratesService = {

@@ -27,7 +27,7 @@ class AddRecordViewController: UITableViewController {
     @IBAction func saveAction(_ sender: Any) {
         let username = usernameField.text
         let text = textField.text
-        let record = Record(id: UUID(), user: User(username: username), text: text, date: Date())
+        let record = Record(user: User(username: username), text: text, date: Date())
         viewModel?.add(record: record)
         dismiss()
     }

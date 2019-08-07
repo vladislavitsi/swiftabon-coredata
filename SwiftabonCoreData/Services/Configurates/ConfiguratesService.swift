@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class ConfiguratesService {
+class ConfiguratesService {
 
     private let userDefaults: UserDefaults
 

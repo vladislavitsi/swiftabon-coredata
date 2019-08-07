@@ -13,6 +13,7 @@ import CoreData
 @objc(SWRecord)
 public class SWRecord: NSManagedObject, RegularParsable {
     func toRegular() -> Record {
-        return Record(id: UUID(), user: user?.toRegular(), text: text, date: date)
+        let id = self.id ?? UUID()
+        return Record(id: id, user: user?.toRegular(), text: text, date: date)
     }
 }

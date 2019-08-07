@@ -30,7 +30,7 @@ struct FeedViewModel {
 
     private var model: FeedModeling
 
-    init(with model: FeedModeling) {
+    init(with model: FeedModeling, router: Router) {
         self.model = model
     }
 

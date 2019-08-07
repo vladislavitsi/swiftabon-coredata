@@ -13,10 +13,6 @@ import CoreData
 
 extension SWUser {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<SWUser> {
-        return NSFetchRequest<SWUser>(entityName: "SWUser")
-    }
-
     @NSManaged public var name: String?
     @NSManaged public var record: NSSet?
 

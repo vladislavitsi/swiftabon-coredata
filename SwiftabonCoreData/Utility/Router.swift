@@ -8,7 +8,11 @@
 
 import UIKit
 
-typealias Completion = () -> Void
+typealias Completion = () -> ()
+
+protocol Routing {
+    
+}
 
 struct Router {
 
@@ -25,7 +29,7 @@ struct Router {
         logicFor(route: route)()
     }
 
-    func logicFor(route: Route) -> () -> Void {
+    func logicFor(route: Route) -> Completion {
         switch route {
         case .main:
             return toMain
@@ -41,7 +45,7 @@ fileprivate extension Router {
     func toMain() {
         let window = UIWindow(frame: UIScreen.main.bounds)
         AppDelegate.shared.window = window
-        let vc = Assembler.FeedViewController
+        let vc = Assembler.feedViewController
         let navController = UINavigationController(rootViewController: vc)
         navController.navigationBar.prefersLargeTitles = true
         window.rootViewController = navController

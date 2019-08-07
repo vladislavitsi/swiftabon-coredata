@@ -11,11 +11,11 @@ import CoreData
 
 struct Assembler {
     
-    static var FeedViewController: FeedViewController {
+    static var feedViewController: FeedViewController {
         guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FeedViewController") as? FeedViewController else { fatalError("Couldn't find FeedViewController!") }
         let persistence = FeedCoreDataPersistance(coreDataService: ServiceProvider.coreData)
         let model = FeedModel(withPersistance: persistence, syncService: ServiceProvider.sync)
-        let viewModel = FeedViewModel(with: model)
+        let viewModel = FeedViewModel(with: model, router: Router.shared)
         vc.viewModel = viewModel
         return vc
     }

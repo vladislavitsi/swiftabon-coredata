@@ -8,16 +8,20 @@
 
 import Foundation
 
-final class SyncService {
+class SyncService {
 
     private let transactionHistory: TransactionHistoryService
     private let networkService: NetworkService
     private let transactionProcessor: IncomingTransactionProcessor
+    private let configService: ConfiguratesService
+    private let coreDataService: CoreDataService
 
-    init(_ transactionHistory: TransactionHistoryService, _ networkService: NetworkService, _ transactionProcessor: IncomingTransactionProcessor) {
+    init(_ transactionHistory: TransactionHistoryService, _ networkService: NetworkService, _ transactionProcessor: IncomingTransactionProcessor, _ configService: ConfiguratesService, _ coreDataService: CoreDataService) {
         self.transactionHistory = transactionHistory
         self.networkService = networkService
         self.transactionProcessor = transactionProcessor
+        self.configService = configService
+        self.coreDataService = coreDataService
     }
 
     func upload() {
@@ -28,11 +32,11 @@ final class SyncService {
     }
 
     func download() {
-        DispatchQueue.global(qos: .background).async { [weak networkService] in
-            let lastSyncDate = ServiceProvider.config.lastSyncDate
+        DispatchQueue.global(qos: .background).async { [weak networkService, weak configService] in
+            let lastSyncDate = configService?.lastSyncDate
             networkService?.fetchTransactions(from: lastSyncDate) { [weak self] transactions in
                 self?.apply(transactions: transactions)
-                ServiceProvider.config.lastSyncDate = Date()
+                self?.configService.lastSyncDate = Date()
             }
         }
     }
@@ -46,8 +50,8 @@ final class SyncService {
                 group.leave()
             }
         }
-        group.notify(queue: .main) { [weak transactionHistory] in
-            ServiceProvider.coreData.saveContext()
+        group.notify(queue: .main) { [weak transactionHistory, weak coreDataService] in
+            coreDataService?.saveContext()
             transactionHistory?.isEnabled = true
         }
     }

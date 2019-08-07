@@ -11,13 +11,13 @@ import Foundation
 class NetworkService {
 
     private let transactions: [Transaction<TransactionHistoryTrackable>] = [
-        Transaction(action: .insert, object: Record(id: UUID(), user: User(username: "person 1"), text: "HA_HA_HA", date: Date()), dateStamp: Date()),
-        Transaction(action: .insert, object: Record(id: UUID(), user: User(username: "person 1"), text: "HA_HA_HA", date: Date()), dateStamp: Date()),
-        Transaction(action: .insert, object: Record(id: UUID(), user: User(username: "person 1"), text: "HA_HA_HA", date: Date()), dateStamp: Date()),
-        Transaction(action: .insert, object: Record(id: UUID(), user: User(username: "person 1"), text: "HA_HA_HA", date: Date()), dateStamp: Date()),
-        Transaction(action: .insert, object: Record(id: UUID(), user: User(username: "person 1"), text: "HA_HA_HA", date: Date()), dateStamp: Date()),
-        Transaction(action: .insert, object: Record(id: UUID(), user: User(username: "person 1"), text: "HA_HA_HA", date: Date()), dateStamp: Date()),
-        Transaction(action: .insert, object: Record(id: UUID(), user: User(username: "person 1"), text: "HA_HA_HA", date: Date()), dateStamp: Date()),
+        Transaction(action: .insert, object: Record(user: User(username: "person 1"), text: "HA_HA_HA", date: Date()), dateStamp: Date()),
+        Transaction(action: .insert, object: Record(user: User(username: "person 1"), text: "HA_HA_HA", date: Date()), dateStamp: Date()),
+        Transaction(action: .insert, object: Record(user: User(username: "person 1"), text: "HA_HA_HA", date: Date()), dateStamp: Date()),
+        Transaction(action: .insert, object: Record(user: User(username: "person 1"), text: "HA_HA_HA", date: Date()), dateStamp: Date()),
+        Transaction(action: .insert, object: Record(user: User(username: "person 1"), text: "HA_HA_HA", date: Date()), dateStamp: Date()),
+        Transaction(action: .insert, object: Record(user: User(username: "person 1"), text: "HA_HA_HA", date: Date()), dateStamp: Date()),
+        Transaction(action: .insert, object: Record(user: User(username: "person 1"), text: "HA_HA_HA", date: Date()), dateStamp: Date()),
     ]
 
     func fetchTransactions(from lastSyncDate: Date?, completion: @escaping ([Transaction<TransactionHistoryTrackable>]) -> () ) {

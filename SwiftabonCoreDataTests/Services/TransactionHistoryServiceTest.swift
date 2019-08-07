@@ -30,14 +30,15 @@ class TransactionHistoryServiceTest: XCTestCase {
         let resultTransactions = transactionHistoryService.fetchHistory()
         XCTAssert(resultTransactions.count == 1, "Should be 1.")
 
-        guard let userTransaction = resultTransactions.first, let realUser = userTransaction.object as? User else {
+        guard let userTransaction = resultTransactions.first else {
             XCTFail("Expected user")
             return
         }
 
-        XCTAssert(userTransaction.action == expectedTransaction.action, "Expected equal action.")
-        XCTAssert(realUser == expectedUser, "Expected equal user.")
+        XCTAssert(userTransaction.isEqual(to: expectedTransaction, as: User.self), "Expected equal transactions.")
     }
+
+
 
     func testAddTransactionAndFetchForDisabledService() {
 

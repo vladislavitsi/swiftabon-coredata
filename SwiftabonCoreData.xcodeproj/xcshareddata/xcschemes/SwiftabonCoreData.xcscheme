@@ -49,7 +49,26 @@
                ReferencedContainer = "container:SwiftabonCoreData.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "32A0105522FAC761009F941F"
+               BuildableName = "SwiftabonCoreDataUITests.xctest"
+               BlueprintName = "SwiftabonCoreDataUITests"
+               ReferencedContainer = "container:SwiftabonCoreData.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "32D2FC1622A4F93F00CB00CB"
+            BuildableName = "SwiftabonCoreData.app"
+            BlueprintName = "SwiftabonCoreData"
+            ReferencedContainer = "container:SwiftabonCoreData.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
